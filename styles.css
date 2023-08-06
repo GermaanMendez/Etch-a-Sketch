@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: "cuteFont"; 
+    src: url("./Pacifico-Regular.ttf") format("truetype"); 
+  }
+*{
+    font-family: cuteFont;
+}
+
+html, body {
+    background-color: #DEF5E5;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .root{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+}
+.header{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+.gameContainer{
+    margin: 0 auto;
+    display: flex;
+    background-color: #BCEAD5;
+    height: 80%;
+    width: 80%;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow:  1px 2px 10px black ;
+}
+.configurationContainer{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9ED5C5;
+    margin-top: 5%;
+    border-radius: 20px;
+    box-shadow:  2px 10px 10px black ;
+}
+
+  button:hover, input[type='color']:hover {
+    transform: scale(1.05);
+  }
+
+  input[type='color'] {
+    --webkit-appearance: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    margin: 0 auto;
+    background-color: transparent; 
+  }
+  input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+.configurationContainer button{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #8EC3B0;
+    width: 50%;
+    border-radius:20px ;
+}
+.gridContainer{
+    height: 80%;
+    width: 50%;
+    margin-top:5%;
+    margin-left: 1%;
+    background-color: #DEF5E5;
+    display: grid;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.item{
+    border: 1px solid black;
+    background-color: white;
+}
+.item:hover{
+    background-color: pink;
+     
+}
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+}
